@@ -1,0 +1,7 @@
+1. The worst-case time complexity for the private member function rehash() is O(n^2). Within the function there exists 
+   a nested loop that first iterates through the lists , then the key-value within each list. This operation would take O(n^2) to complete.
+   Another operation, makeEmpty() exists in this function which contains a loop that runs in O(n). All other operations within this function
+   run in constant time. Therefore, the worst-case time complexity of this function is O(n^2).
+2. The worst-case time complexity for the member function removeUser(const string & k) is O(n^2). Within this function there exists an operation
+    which calls remove() for our HashTable class. remove() contains a loop which will erase a value from our list if it is found. This loop run 
+    in O(n^2). All other operations within this function in constant time. Therefore the worst-case time complexity of this function is O(n^2).
